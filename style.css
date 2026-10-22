@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+/*
+Space Grotesk - Heading 
+JetBrains - Code snippets
+Plus Jakarta Sans - Body
+*/
+/* root selector for declaring vars*/
+
+
+:root {
+    --base-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #ffc06e;
+    --secondary-color: #8D8DFF;
+    --color-1: #F9F6F3;
+    --color-2: #F3F7F9;
+    --color-3: #F6F3F9;
+}
+
+
+/*universal selector for referencing all the elements*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+general html style
+fonts after the first one are fallback fonts*/
+html {
+    font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+/*
+stying for body
+*/
+body {
+    padding: 1em;
+    background-color: var(--base-color);
+}
+
+/*
+style for headings
+*/
+h1,
+h2,
+h3 {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*
+nav bar style
+*/
+nav {
+    /*top, right, bottom, left (auto adjust to screen size)*/
+    margin: 1em auto 3em auto;
+    /*can go up to 1000px but never larger than 100% of the screen*/
+    width: min(1000px, 100%);
+}
+
+nav ul {
+    display: flex;
+    /*turns list into horizontal rol*/
+    align-items: center;
+    /* centers vertically*/
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    /*so all other items are pushed to the right*/
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+/*style of anchor tags*/
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header,
+section {
+    margin: 2em auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 1em;
+
+}
+
+/*style for custom class*/
+.flex-container {
+    display: flex;
+    /*display chart elements side by side*/
+    justify-content: center;
+    /*aligns horizontally in the center*/
+    align-items: center;
+    /*aligns vertically in the center*/
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+/*style for header images*/
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    /*round the corners*/
+    object-fit: cover;
+    /*fill area without strethcing, crop instead*/
+    object-position: bottom;
+    /*if cropping happens focus on the bottom part*/
+}
+
+.text-container {
+    /*flex grow behavior, flex shrink, flex basis */
+    /*don't grow, shrink if needed, try to be around 34 em wide*/
+    flex: 0 1 34em;
+}
+
+.text-container-secondary ul {
+    display: flex;
+    flex-direction: column;
+    /*turns list into horizontal rol*/
+    align-items: lef;
+    padding: 0.5em;
+    /* centers vertically*/
+}
+
+.text-container-secondary li {
+
+    padding: 0.1em;
+    /* centers vertically*/
+}
+
+.text-container-secondary {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.text-container h3 {
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.text-container p {
+    margin: .75em 0 1em 0;
+    /*margin top and bottom*/
+    font-size: 1.25rem;
+    /*font size slightly bigger than usual font size*/
+}
+
+/*call to action buttons*/
+.cta-button {
+    display: inline-block;
+    /*allows padding and width so it's a button*/
+    text-decoration: none;
+    /*removes default underlihgt*/
+    color: white;
+    /*font color*/
+    background-color: var(--primary-color);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    /*bold text*/
+}
+
+.cta-button:hover {
+    transform: translateY(-0.1em);
+    filter: brightness(1.08);
+}
+
+/*secondary buttons*/
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: center;
+}
+
+.image-reel {
+    flex: 0 1 20em;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows images to go down to the next row */
+    gap: .5em;
+    justify-content: center;
+    /*aligns horizontally in the center*/
+}
+
+.image-reel img {
+    width: 30em;
+    height: 15em;
+    border-radius: .5em;
+    /*round the corners*/
+    object-fit: cover;
+}
+
+.image-reel img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+.project-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+.project-text-chunk {
+    margin: 0 0 0 .25em;
+    text-align: left;
+    max-width: 30em;
+}
+
+.project-text-chunk ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+}
+
+.project-text-chunk li {
+    padding-bottom: 0.5em;
+}
+
+.project-text-chunk h3 {
+    color: var(--secondary-color)
+}
+
+.project-name {
+    font-weight: bold;
+
+}
+
+.project-description {
+    flex: 0;
+
+}
+
+.project-media {
+    flex: 0 1 30em;
+    justify-content: center;
+    /*aligns horizontally in the center*/
+    align-items: center;
+    /*aligns vertically in the center*/
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+.project-media img {
+    padding: 0.1em;
+    width: 15em;
+    height: 10em;
+    border-radius: .5em;
+    /*round the corners*/
+    object-fit: cover;
+}
+
+.project-media img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
