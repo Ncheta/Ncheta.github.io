@@ -56,7 +56,7 @@ nav bar style
 */
 nav {
     /*top, right, bottom, left (auto adjust to screen size)*/
-    margin: 1em auto 3em;
+    margin: 1em auto 3em auto;
     /*can go up to 1000px but never larger than 100% of the screen*/
     width: min(1000px, 100%);
 }
