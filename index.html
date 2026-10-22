@@ -14,7 +14,7 @@
             <ul> <!--unordered list-->
                 <li><a href="index.html">Ncheta Mbaraonye</a></li>
                 <li><a href="https://github.com/Ncheta">Github</a></li>
-                <li><a href="https://linkedin.com/in/ncheta-mbaraonye-026272367">LinkedIn</a></li>
+                <li><a href="https://linkedin.com/in/ncheta-mbaraonye">LinkedIn</a></li>
                 <li><a href="#projects">Projects</a></li> <!--#projects is a bookmark link-->
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="index.html">Contact</a></li>
@@ -50,7 +50,10 @@
             </li>
             <li>
                 <a href="#stratus">
-                    <img width="500 px" height="300 px" src="assets/stratus_1.png">
+                    <video autoplay loop muted playsinline poster="assets/stratus_1.png" width="100%">
+                        <source src="assets/stratus_vid_1.mp4" type="video/mp4">
+                        <img src="assets/stratus_1.png">
+                    </video>
                 </a>
             </li>
             <li>
@@ -99,15 +102,34 @@
                 <div class="project-card">
 
                     <div class="project-media">
-                        <img width="500 px" height="300 px" src="assets/stratus_1.png">
-                        <img width="500 px" height="300 px" src="assets/hedgemage_1.png">
+                        <video autoplay loop muted playsinline poster="assets/stratus_1.png" width="100%">
+                            <source src="assets/stratus_vid_1.mp4" type="video/mp4">
+                            <img src="assets/stratus_1.png">
+                        </video>
                     </div>
 
                     <div class="project-text-chunk">
                         <h2 class="project-name">Stratus</h2>
-                        <p class="project-description">
-                            Description here again.
-                        </p>
+                        <h3>TEAM GAME PROJECT</h3>
+                        <ul>
+                            <li>
+                                An atmospheric 3D puzzle game made in Unreal Engine.
+                            </li>
+                            <li>
+                                On this project I worked on:
+                                <ul>
+                                    <li>
+                                        A procedural weather system using the Niagara system.
+                                    </li>
+                                    <li>
+                                        Wave simulation using the Niagara system.
+                                    </li>
+                                    <li>
+                                        Procedurally emulating boat bobbing using blueprints.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
@@ -125,9 +147,28 @@
 
                     <div class="project-text-chunk">
                         <h2 class="project-name">Match Box</h2>
-                        <p class="project-description">
-                            Description here again.
-                        </p>
+                        <h3>TEAM GAME PROJECT</h3>
+                        <ul>
+                            <li>
+                                An atmospheric snow walking simulator.
+                            </li>
+                            <li>
+                                On this project I worked on:
+                                <ul>
+                                    <li>
+                                        Item goes here.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                You can view a full playthrough on here:
+                                <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/wyLLVrRzF04?si=TAgfOAVqJNgzGE9e"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
@@ -144,6 +185,7 @@
 
                     <div class="project-text-chunk">
                         <h2 class="project-name">Hedge Mage</h2>
+                        <h3>TEAM GAME PROJECT</h3>
                         <p class="project-description">
                             Description here again.
                         </p>
@@ -165,6 +207,7 @@
 
                     <div class="project-text-chunk">
                         <h2 class="project-name">Tic-Dec-Toe</h2>
+                        <h3>TEAM GAME PROJECT</h3>
                         <p class="project-description">
                             Description here again.
                         </p>
@@ -184,50 +227,59 @@
                 <div class="text-container-secondary">
                     <ul>
                         <li>
-                            <h2>Programming</h2>
+                            <div class="skill-card">
+                                <h2>Programming</h2>
 
-                            <ul>
-                                <li>C/C++</li>
-                                <li>Python</li>
-                                <li>Graphics API (Vulkan and OpenGL)</li>
-                                <li>Shader Programming (GLSL, HLSL)</li>
-                                <li>Audio Programming</li>
-                            </ul>
+                                <ul>
+                                    <li>C/C++</li>
+                                    <li>Python</li>
+                                    <li>Graphics API (Vulkan and OpenGL)</li>
+                                    <li>Shader Programming (GLSL, HLSL)</li>
+                                    <li>Audio Programming</li>
+                                </ul>
+                            </div>
 
                         </li>
 
                         <li>
-                            <h2>Game Development</h2>
-                            <ul>
-                                <li>Unreal Engine</li>
-                                <li>Unreal Blueprinting and C++</li>
-                                <li>Game Engine Architecture</li>
-                            </ul>
+                            <div class="skill-card">
+                                <h2>Game Development</h2>
+                                <ul>
+                                    <li>Unreal Engine</li>
+                                    <li>Unreal Blueprinting and C++</li>
+                                    <li>Game Engine Architecture</li>
+                                </ul>
+                            </div>
                         </li>
 
                         <li>
-                            <h2>Technical Art</h2>
-                            <ul>
-                                <li>Shader Development</li>
-                                <li>PBR Materials</li>
-                                <li>Unreal Niagara System VFX</li>
-                                <li>Asset Integration</li>
-                                <li>Procedural VFX</li>
-                            </ul>
+                            <div class="skill-card">
+                                <h2>Technical Art</h2>
+                                <ul>
+                                    <li>Shader Development</li>
+                                    <li>PBR Materials</li>
+                                    <li>Unreal Niagara System VFX</li>
+                                    <li>Asset Integration</li>
+                                    <li>Procedural VFX</li>
+                                </ul>
+                            </div>
                         </li>
 
                         <li>
-                            <h2>Teamwork</h2>
-                            <p>At DigiPen, I've had the opportunity to work on multiple game development teams,
-                                collaborating with fellow programmers and team members from different disciplines.
-                            <p>
-                                These experiences have helped me develop strong communication skills, adapt to different
-                                working styles,
-                                and understand what makes a team work well together. I strive to be a collaborative and
-                                reliable teammate who contributes to both the project's success
-                                and a positive team environment!
-                            </p>
-                            </p>
+                            <div class="skill-card">
+                                <h2>Teamwork</h2>
+                                <p>At DigiPen, I've had the opportunity to work on multiple game development teams,
+                                    collaborating with fellow programmers and team members from different disciplines.
+                                <p>
+                                    These experiences have helped me develop strong communication skills, adapt to
+                                    different
+                                    working styles,
+                                    and understand what makes a team work well together. I strive to be a collaborative
+                                    and
+                                    reliable teammate who contributes to both the project's success
+                                    and a positive team environment!
+                                </p>
+                            </div>
                         </li>
                     </ul>
                 </div>

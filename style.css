@@ -13,6 +13,7 @@ Plus Jakarta Sans - Body
     --text-color: #000000;
     --primary-color: #ffc06e;
     --secondary-color: #8D8DFF;
+    --color-4: #fae2c1;
     --color-1: #F9F6F3;
     --color-2: #F3F7F9;
     --color-3: #F6F3F9;
@@ -135,13 +136,22 @@ header img {
     flex-direction: column;
     /*turns list into horizontal rol*/
     align-items: lef;
-    padding: 0.5em;
+    padding: 0em;
+
     /* centers vertically*/
 }
 
 .text-container-secondary li {
+    list-style-type: none;
+    padding: 1em;
+    /* centers vertically*/
+}
 
-    padding: 0.1em;
+.text-container-secondary li li {
+
+    padding: 0.5em;
+    list-style-type: disc;
+    list-style-position: inside;
     /* centers vertically*/
 }
 
@@ -149,6 +159,8 @@ header img {
     display: flex;
     flex-direction: column;
     text-align: left;
+    box-sizing: border-box;
+    padding: 1em;
 }
 
 .text-container h3 {
@@ -219,11 +231,24 @@ section {
     /*round the corners*/
     object-fit: cover;
     box-sizing: border-box;
+    transition: transform 0.3s ease;
 }
 
-.image-reel img:hover {
-    transform: scale(1.05);
+.image-reel video {
+    max-width: 100%;
+    width: 30em;
+    height: 15em;
+    border-radius: .5em;
+    /*round the corners*/
+    object-fit: cover;
+    box-sizing: border-box;
     transition: transform 0.3s ease;
+}
+
+.image-reel img:hover,
+.image-reel video:hover {
+    transform: scale(1.05);
+
 }
 
 
@@ -236,17 +261,27 @@ section {
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 1em;
+    background-color: var(--color-1);
+    border-radius: .5em;
+    transition: transform 0.3s ease;
 }
 
 .project-text-chunk {
+    border-left: 0.25em solid var(--secondary-color);
+    padding-left: 0.25em;
     margin: 0 0 0 .25em;
     text-align: left;
     max-width: 30em;
+    transition: transform 0.3s ease;
 }
 
 .project-text-chunk ul {
     list-style-type: disc;
     padding-left: 1.5em;
+}
+
+.project-text-chunk ul ul {
+    list-style-type: circle;
 }
 
 .project-text-chunk li {
@@ -255,6 +290,14 @@ section {
 
 .project-text-chunk h3 {
     color: var(--secondary-color)
+}
+
+.project-text-chunk iframe {
+    padding-top: 0.5em;
+    max-width: 30em;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    max-width: 100%;
 }
 
 .project-name {
@@ -275,7 +318,8 @@ section {
     /*aligns vertically in the center*/
     flex-wrap: wrap;
     display: flex;
-
+    width: min(75em, 100%);
+    box-sizing: border-box;
 }
 
 .project-media img {
@@ -285,9 +329,52 @@ section {
     border-radius: .5em;
     /*round the corners*/
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.project-media img:hover {
-    transform: scale(1.05);
+.project-media video {
+    padding: 0.1em;
+    width: 30em;
+    max-width: 100%;
+    height: 20em;
+    border-radius: .5em;
+    /*round the corners*/
+    object-fit: cover;
     transition: transform 0.3s ease;
+}
+
+.project-media img:hover,
+.project-media video:hover,
+.project-card:hover {
+    transform: scale(1.05);
+
+}
+
+
+.project-card:hover .project-text-chunk {
+    transform: translateX(0.5em);
+
+}
+
+.skill-card {
+    background-color: var(--color-1);
+    padding-bottom: 5em;
+    object-fit: cover;
+    border-radius: .5em;
+    transition: transform 0.3s ease;
+}
+
+.skill-card h2 {
+    padding-left: 0.1em;
+}
+
+.skill-card p {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 0.5em;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
 }
