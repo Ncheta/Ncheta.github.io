@@ -79,6 +79,8 @@ nav li:first-child {
     font-weight: bold;
 }
 
+
+
 /*style of anchor tags*/
 nav a {
     text-decoration: none;
@@ -197,7 +199,6 @@ section {
 }
 
 .image-reel {
-    flex: 0 1 20em;
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -205,14 +206,19 @@ section {
     gap: .5em;
     justify-content: center;
     /*aligns horizontally in the center*/
+    margin: 2em auto;
+    width: min(75em, 100%);
+    padding: 0;
 }
 
 .image-reel img {
+    max-width: 100%;
     width: 30em;
     height: 15em;
     border-radius: .5em;
     /*round the corners*/
     object-fit: cover;
+    box-sizing: border-box;
 }
 
 .image-reel img:hover {
