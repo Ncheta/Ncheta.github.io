@@ -68,6 +68,7 @@ nav ul {
     /* centers vertically*/
     list-style-type: none;
     gap: 2em;
+    flex-wrap: wrap;
 }
 
 nav li:first-child {
