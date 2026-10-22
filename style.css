@@ -69,7 +69,7 @@ nav ul {
     list-style-type: none;
     gap: 2em;
     flex-wrap: wrap;
-
+    overflow-x: auto;
 }
 
 nav li:first-child {
