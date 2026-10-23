@@ -152,6 +152,8 @@ header img {
     /* centers vertically*/
 }
 
+
+
 .text-container-secondary li {
     list-style-type: none;
     padding: 0.5em;
@@ -178,6 +180,13 @@ header img {
     list-style-position: outside;
     padding: 0.1em 0;
     margin-left: 1em;
+}
+
+.text-container-secondary ul ul li li {
+
+    list-style-type: circle;
+    list-style-position: outside;
+
 }
 
 .text-container-secondary {
@@ -393,6 +402,8 @@ section {
     border: 0.1em dashed var(--secondary-color);
     padding-left: 0.5em;
     padding-right: 0.5em;
+    min-width: 15em;
+
     max-width: min(30em, 100%);
 
 }
