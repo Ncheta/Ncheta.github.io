@@ -9,14 +9,14 @@ Plus Jakarta Sans - Body
 
 
 :root {
-    --base-color: #ffffff;
-    --text-color: #000000;
-    --primary-color: #ffc06e;
-    --secondary-color: #8D8DFF;
-    --color-4: #fae2c1;
-    --color-1: #F9F6F3;
-    --color-2: #F3F7F9;
-    --color-3: #F6F3F9;
+    --base-color: #051234;
+    --text-color: #172B4D;
+    --primary-color: #2563EB;
+    --secondary-color: #3B82F6;
+    --color-4: #DBEAFE;
+    --color-1: #FFFFFF;
+    --color-2: #EFF6FF;
+    --color-3: #E0F2FE;
 }
 
 
@@ -131,11 +131,22 @@ header img {
     flex: 0 1 34em;
 }
 
-.text-container-secondary ul {
+.text-container-secondary ul ul {
     display: flex;
     flex-direction: column;
     /*turns list into horizontal rol*/
-    align-items: lef;
+    align-items: left;
+    padding: 0em;
+    gap: 0em
+        /* centers vertically*/
+}
+
+.text-container-secondary ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*turns list into horizontal rol*/
+    gap: 1em;
     padding: 0em;
 
     /* centers vertically*/
@@ -143,24 +154,41 @@ header img {
 
 .text-container-secondary li {
     list-style-type: none;
-    padding: 1em;
+    padding: 0.5em;
+    display: flex;
+    list-style-type: disc;
+    justify-content: center;
     /* centers vertically*/
 }
 
 .text-container-secondary li li {
 
-    padding: 0.5em;
+    padding: 0.1em;
     list-style-type: disc;
     list-style-position: inside;
+    flex-direction: column;
+
     /* centers vertically*/
+}
+
+
+.text-container-secondary ul ul li {
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: outside;
+    padding: 0.1em 0;
+    margin-left: 1em;
 }
 
 .text-container-secondary {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     text-align: left;
     box-sizing: border-box;
     padding: 1em;
+    justify-items: center;
+    align-items: center;
+
 }
 
 .text-container h3 {
@@ -358,14 +386,25 @@ section {
 
 .skill-card {
     background-color: var(--color-1);
-    padding-bottom: 5em;
+    padding-bottom: 0.4em;
     object-fit: cover;
     border-radius: .5em;
     transition: transform 0.3s ease;
+    border: 0.1em dashed var(--secondary-color);
+    padding-left: 0.1em;
+    padding-right: 0.5em;
+    max-width: min(30em, 100%);
+
 }
 
 .skill-card h2 {
-    padding-left: 0.1em;
+    padding-left: 0.01em;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.skill-card:hover h2 {
+    color: var(--secondary-color);
 }
 
 .skill-card p {
@@ -373,6 +412,8 @@ section {
     list-style-type: disc;
     list-style-position: inside;
     padding-left: 0.5em;
+    padding-bottom: 1em;
+
 }
 
 .skill-card:hover {
