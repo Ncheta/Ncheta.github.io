@@ -391,7 +391,7 @@ section {
     border-radius: .5em;
     transition: transform 0.3s ease;
     border: 0.1em dashed var(--secondary-color);
-    padding-left: 0.1em;
+    padding-left: 0.5em;
     padding-right: 0.5em;
     max-width: min(30em, 100%);
 
