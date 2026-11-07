@@ -15,13 +15,13 @@
                 <li><a href="index.html">Ncheta Mbaraonye</a></li>
                 <li><a href="https://github.com/Ncheta">Github</a></li>
                 <li><a href="https://linkedin.com/in/ncheta-mbaraonye">LinkedIn</a></li>
-                <li><a href="#projects">Projects</a></li> <!--#projects is a bookmark link-->
+                <li><a href="#sizzle-reel">Projects</a></li> <!--#projects is a bookmark link-->
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="mailto:nchetaevans@gmail.com">Contact Me</a></li>
             </ul>
         </nav>
         <div class="flex-container">
-            <img height="400 px" width="300px" src="https://img.pokemondb.net/artwork/large/sylveon.jpg">
+            <img height="400 px" width="300px" src="assets/myphoto.jpeg">
             <div class="text-container">
                 <h1>Hi!</h1>
                 <p>I'm Ncheta, currrently a Computer Science in Real-Time Interactive Simulations student at DigiPen
@@ -32,7 +32,7 @@
                 </p>
 
                 <p>You can contact me at: <a href="mailto:nchetaevans@gmail.com">nchetaevans@gmail.com</a></p>
-                <a href="#projects" class="cta-button secondary">See My Projects</a>
+                <a href="#sizzle-reel" class="cta-button secondary">See My Projects</a>
             </div>
         </div>
     </header>
@@ -41,13 +41,17 @@
         <div class="flex-container">
             <div class="text-container">
                 <h1>Some stuff I've worked on!</h1>
-                <h3>(You can click to see more about the project)</h3>
+                <h3>(You can click to learn more about the project)</h3>
             </div>
         </div>
         <div class="image-reel">
             <li>
                 <a href="#matchbox">
-                    <img width="500 px" height="300 px" src="assets/matchbox_1.png">
+                    <video autoplay loop muted playsinline poster="assets/matchbox_1.png" width="100%">
+                        <source src="assets/matchbox_vid_1.mp4" type="video/mp4">
+                        <img src="assets/matchbox_1.png">
+                    </video>
+
                 </a>
             </li>
             <li>
@@ -60,12 +64,23 @@
             </li>
             <li>
                 <a href="#hedgemage">
-                    <img width="500 px" height="300 px" src="assets/hedgemage_1.png">
+                    <video autoplay loop muted playsinline poster="assets/hedgemage_1.png" width="100%">
+                        <source src="assets/hedgemage_vid_2.mp4" type="video/mp4">
+                        <img src="assets/hedgemage_1.png">
+                    </video>
                 </a>
             </li>
             <li>
                 <a href="#tangerine">
                     <img width="500 px" height="300 px" src="assets/Tangerine_1.gif">
+                </a>
+            </li>
+            <li>
+                <a href="#tic-dec-toe">
+                    <video autoplay loop muted playsinline poster="assets/ticdectoe_1.png" width="100%">
+                        <source src="assets/ticdectoe_vid_1.mp4" type="video/mp4">
+                        <img src="assets/ticdectoe_1.png">
+                    </video>
                 </a>
             </li>
         </div>
@@ -147,9 +162,10 @@
                 <div class="project-card">
 
                     <div class="project-media">
-                        <img width="500 px" height="300 px" src="assets/stratus_1.png">
-                        <img width="500 px" height="300 px" src="assets/hedgemage_1.png">
-                        <img width="500 px" height="300 px" src="assets/stratus_1.png">
+                        <video autoplay loop muted playsinline poster="assets/matchbox_1.png" width="100%">
+                            <source src="assets/matchbox_vid_1.mp4" type="video/mp4">
+                            <img src="assets/matchbox_1.png">
+                        </video>
                     </div>
 
                     <div class="project-text-chunk">
@@ -163,8 +179,22 @@
                                 On this project I worked on:
                                 <ul>
                                     <li>
-                                        Item goes here.
+                                        Implementing the system for the visual effect of life growing
                                     </li>
+                                    <li>
+                                        Composing the piano melody heard in game and implementing SFX.
+                                    </li>
+                                    <li>
+                                        Implementing event systems and map boundaries.
+                                    </li>
+                                    <li>
+                                        Programming and designing the text pop-ups
+                                    </li>
+                                    <li>
+                                        Programming the ending sequence and in-game start/end transition.
+                                    </li>
+
+
                                 </ul>
                             </li>
                             <li>
@@ -185,17 +215,35 @@
                 <div class="project-card">
 
                     <div class="project-media">
-                        <img width="500 px" height="300 px" src="assets/stratus_1.png">
-                        <img width="500 px" height="300 px" src="assets/hedgemage_1.png">
-                        <img width="500 px" height="300 px" src="assets/stratus_1.png">
+                        <video autoplay loop muted playsinline poster="assets/hedgemage_1.png" width="100%">
+                            <source src="assets/hedgemage_vid_1.mp4" type="video/mp4">
+                            <img src="assets/hedgemage_1.png">
+                        </video>
+                        <video autoplay loop muted playsinline poster="assets/hedgemage_1.png" width="100%">
+                            <source src="assets/hedgemage_vid_2.mp4" type="video/mp4">
+                            <img src="assets/hedgemage_1.png">
+                        </video>
                     </div>
 
                     <div class="project-text-chunk">
                         <h2 class="project-name">Hedge Mage</h2>
                         <h3>TEAM GAME PROJECT</h3>
-                        <p class="project-description">
-                            Description here again.
-                        </p>
+                        <ul>
+                            <li>
+                                A 2D maze puzzle game.
+                            </li>
+                            <li>
+                                On this project I worked on:
+                                <ul>
+                                    <li>Developed the graphics framework from the ground up.</li>
+                                    <li>Built and maintained core rendering systems including shader management, texture
+                                        loading, and graphical abstractions.</li>
+                                    <li>Wrote custom shaders for the lighting and pause screen menu effects</li>
+
+
+
+                                </ul>
+                            </li>
                     </div>
 
                 </div>
@@ -207,17 +255,33 @@
                 <div class="project-card">
 
                     <div class="project-media">
-                        <img width="500 px" height="300 px" src="assets/stratus_1.png">
-                        <img width="500 px" height="300 px" src="assets/hedgemage_1.png">
-                        <img width="500 px" height="300 px" src="assets/stratus_1.png">
+                        <video autoplay loop muted playsinline poster="assets/ticdectoe_1.png" width="100%">
+                            <source src="assets/ticdectoe_vid_1.mp4" type="video/mp4">
+                            <img src="assets/ticdectoe_1.png">
+                        </video>
                     </div>
 
                     <div class="project-text-chunk">
                         <h2 class="project-name">Tic-Dec-Toe</h2>
                         <h3>TEAM GAME PROJECT</h3>
-                        <p class="project-description">
-                            Description here again.
-                        </p>
+                        <ul>
+
+                            <li>
+                                A two player tic-tac-toe card game.
+                            </li>
+                            <li>
+                                On this project I worked on:
+                                <ul>
+                                    <li> Implemented the system for the tic-tac-toe grid and it's response to in game
+                                        card events </li>
+                                    <li> Addedst to the game.</li>
+
+
+
+
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
